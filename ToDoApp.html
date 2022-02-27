@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="ToDoApp.css">
+</head>
+
+<body style="background-image: linear-gradient(100deg,#676a6d,#0a8346);">
+    <div class="container m-5 p-2 rounded mx-auto bg-light shadow" style="width: 80%;">
+        <div class="row m-1 p-4">
+            <div class="col text-primary text-center mx-auto display-inline-block">
+                <h1>To-Do List App</h1>
+            </div>
+        </div>
+        <div class="row m-1 p-3">
+            <div class="col col-10 mx-auto">
+                <div
+                    class="row bg-white rounded shadow-sm p-2 add-todo-wrapper align-items-center justify-content-center">
+                    <div class="col">
+                        <input type="text"
+                            class="form-control form-control-lg border-0 todo-input bg-transparent rounded" type="text"
+                            placeholder="Add Todo .." name="todos" id="todos">
+                        <input type="hidden" id="save-index">
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto px-2 mt-2 mr-2">
+                <button type="button" class="add-btn btn btn-primary btn-lg">Add</button>
+                <button type="button" class="btn btn-primary btn-lg" id="save-btn" style="display:none;">Save</button>
+            </div>
+        </div>
+
+        <div class="todo-container">
+            <ul class="todo-list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="ToDoApp.js"></script>
+</body>
+
+</html>
